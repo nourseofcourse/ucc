@@ -1,0 +1,76 @@
+.band {
+  background-color: $light-blue;
+  padding: 80px 0 110px;
+
+  overflow: hidden;
+  position: relative;
+}
+
+  .band--body {
+    &:before {
+      content: 'BODY';
+      position: absolute;
+      top: 65px;
+      right: -30px;
+      color: red;
+
+      font-size: 330px;
+      line-height: 1;
+      color: $lightest-blue;
+      letter-spacing: -24.75px;
+      font-family: $font-family-sans-serif;
+    }
+  }
+
+  .band--business {
+    padding-top: 177px;
+    padding-bottom: 92px;
+
+    &:before {
+      content: 'BUSINESS';
+      position: absolute;
+      top: -15px;
+      left: -350px;
+      color: red;
+
+      font-size: 330px;
+      line-height: 1;
+      color: $lightest-blue;
+      letter-spacing: -24.75px;
+      font-family: $font-family-sans-serif;
+    }
+  }
+
+  .band--darken {
+    background-color: $dark-blue;
+
+    &.band--body {
+      &:before {
+        color: $light-blue;
+      }
+    }
+  }
+
+  .band__headline {
+    background-color: $primary;
+    display: inline-block;
+    margin: 0 auto 105px;
+
+    padding: 19px 32px 18px;
+    line-height: 1;
+
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+       -moz-transform: translateX(-50%);
+            transform: translateX(-50%);
+
+    -webkit-box-shadow: 0px 24px 21px 0px rgba(0,0,0,0.20);
+       -moz-box-shadow: 0px 24px 21px 0px rgba(0,0,0,0.20);
+            box-shadow: 0px 24px 21px 0px rgba(0,0,0,0.20);
+  }
+
+  .band__headline--padded {
+    padding-left: 40px;
+    padding-right: 40px;
+  }

@@ -1,0 +1,25 @@
+.gallary {
+
+}
+
+    .gallary__item {
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+      .gallary__item--2,
+      .gallary__item--3 {
+        display: flex;
+        flex-direction: row;
+        height: 50%;
+
+        > img {
+          max-height: 272px;
+        }
+      }
+
+      .gallary__item--3 {
+        align-items: flex-end;
+      }
