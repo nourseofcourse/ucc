@@ -1,0 +1,14 @@
+.site-foot {
+  background-color: $light;
+  padding: 63px 0 18px;
+
+  color: $blue;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  font-family: $font-family-sans-serif;
+
+  span {
+    display: block;
+  }
+}

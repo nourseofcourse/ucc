@@ -1,44 +1,94 @@
 .band {
   background-color: $light-blue;
-  padding: 80px 0 110px;
+  padding: 40px 0 40px;
 
   overflow: hidden;
   position: relative;
+
+  @media(min-width: $screen-sm-min) {
+    padding: 80px 0 110px;
+  }
 }
 
-  .band--body {
-    &:before {
-      content: 'BODY';
-      position: absolute;
-      top: 65px;
-      right: -30px;
-      color: red;
+  .band--small {
+    padding: 34px 0 50px;
+  }
 
-      font-size: 330px;
-      line-height: 1;
-      color: $lightest-blue;
-      letter-spacing: -24.75px;
-      font-family: $font-family-sans-serif;
+  .band--body {
+    @media(min-width: $screen-sm-min) {
+      padding-bottom: 150px;
+      &:before {
+        content: 'BODY';
+        position: absolute;
+        top: 65px;
+        right: -30px;
+        color: red;
+
+        font-size: 330px;
+        line-height: 1;
+        color: $lightest-blue;
+        letter-spacing: -24.75px;
+        font-family: $font-family-sans-serif;
+      }
+      &:after{
+        content: 'MIND';
+        position: absolute;
+        bottom: -30px;
+        left: -50px;
+        color: red;
+        z-index: 0;
+        font-size: 330px;
+        line-height: 1;
+        color: $lightest-blue;
+        letter-spacing: -24.75px;
+        font-family: $font-family-sans-serif;
+      }
+    }
+  }
+
+  .band--soul {
+    @media(min-width: $screen-sm-min) {
+      &:before{
+        content: 'SOUL';
+        position: absolute;
+        top: 65px;
+        right: -35px;
+        color: red;
+        z-index: 0;
+        font-size: 330px;
+        line-height: 1;
+        color: $lightest-blue;
+        letter-spacing: -24.75px;
+        font-family: $font-family-sans-serif;
+      }
     }
   }
 
   .band--business {
-    padding-top: 177px;
-    padding-bottom: 92px;
+    padding-top: 100px;
+    padding-bottom: 40px;
 
-    &:before {
-      content: 'BUSINESS';
-      position: absolute;
-      top: -15px;
-      left: -350px;
-      color: red;
+    @media(min-width: $screen-sm-min) {
+      padding-top: 177px;
+      padding-bottom: 92px;
+      &:before {
+        content: 'BUSINESS';
+        position: absolute;
+        top: -15px;
+        left: -350px;
+        color: red;
 
-      font-size: 330px;
-      line-height: 1;
-      color: $lightest-blue;
-      letter-spacing: -24.75px;
-      font-family: $font-family-sans-serif;
+        font-size: 330px;
+        line-height: 1;
+        color: $lightest-blue;
+        letter-spacing: -24.75px;
+        font-family: $font-family-sans-serif;
+      }
     }
+  }
+
+  .band--light {
+    background: #fff;
   }
 
   .band--darken {
@@ -54,7 +104,11 @@
   .band__headline {
     background-color: $primary;
     display: inline-block;
-    margin: 0 auto 105px;
+    margin: 0 auto 30px;
+
+    @media (min-width: $screen-sm-min) {
+      margin: 0 auto 105px;
+    }
 
     padding: 19px 32px 18px;
     line-height: 1;

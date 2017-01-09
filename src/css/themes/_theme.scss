@@ -26,6 +26,14 @@ h6 {
 	text-transform: uppercase;
 }
 
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
 .bg--white {
 	background: #fff;
 	color: #2E3037;
@@ -36,4 +44,67 @@ h6 {
 	height: 28px;
 	width: 100%;
 	margin-top: 20px;
+}
+
+.bg-blue {
+	background: $dark-blue;
+}
+
+.navbar-btn {
+	display: inline-block;
+}
+
+.navbar-nav {
+	> li {
+		margin: 28px 15px 26px;
+
+		@media (max-width: $screen-xs-max) {
+			margin: 22px 15px 18px;
+		}
+
+		&.navbar-btn {
+			margin-top: 16px;
+			margin-bottom: 16px;
+		}
+	}
+}
+
+.navbar-default {
+	transition: background-color .3s;
+}
+.navbar-scroll {
+	background-color: #23252B;
+}
+
+@media (max-width: $screen-xs-max) {
+	.navbar-header {
+		display: inline-block;
+	}
+	.navbar-nav {
+		margin: 0 -15px;
+		li {
+			vertical-align: top;
+			display: inline-block;
+		}
+	}
+
+	.navbar-collapse {
+		float: right;
+	}
+
+	.navbar-brand {
+		height: 60px;
+		padding: 13px 15px;
+	}
+
+	.navbar {
+		min-height: 68px;
+		max-height: 68px;
+	}
+}
+
+@media(max-width: 320px) {
+	.hidden-xss {
+		display: none !important;
+	}
 }

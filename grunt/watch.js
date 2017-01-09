@@ -7,7 +7,7 @@ module.exports = function () {
     },
 		sass: {
 			files: ['<%= config.source.sass %>/**/*.scss', '<%= config.source.sass %>/**.scss'],
-			tasks: ['sass:all', 'cachebreaker:timestamp', 'notify:watch']
+			tasks: ['sass:all', 'cssmin', 'cachebreaker:timestamp', 'notify:watch']
 		},
     // watch html files, only used for live reload
     html: {

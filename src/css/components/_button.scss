@@ -1,0 +1,49 @@
+.button,
+.nav li .button {
+  font-family: $font-family-sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  outline: none;
+  border-style: solid;
+  border-width: 1px;
+  padding: 17px 20px;
+
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+
+  -webkit-transition: all .2s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+      -ms-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 16px;
+    line-height: 1;
+    padding: 9px 16px;
+  }
+}
+
+    .button--primary,
+    .navbar-default .navbar-nav li .button--primary {
+      background: $primary;
+      border-color: $primary;
+      color: #fff;
+
+      &:hover,
+      &:focus {
+        background: #FB3535;
+        border-color: #FB3535;
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      &:active {
+        background: $primary;
+        border-color: $primary;
+        color: #fff;
+        text-decoration: none;
+      }
+    }

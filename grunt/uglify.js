@@ -18,7 +18,7 @@ module.exports = function () {
     },
     min: {
       files: {
-        '<%= config.dist %>/<%= config.destination.js %>/site.min.js': ['<%= config.dist %>/<%= config.destination.js %>/vendor.js', '<%= config.html %>/<%= config.destination.js %>/site.js']
+        '<%= config.html %>/<%= config.destination.js %>/site.min.js': ['<%= config.html %>/<%= config.destination.js %>/vendor.js', '<%= config.html %>/<%= config.destination.js %>/site.js']
       }
     }
   };

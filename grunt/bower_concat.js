@@ -13,7 +13,11 @@ module.exports = function () {
 			include: [
 				'jquery',
         'webfontloader',
-				'matchHeight'
+				'matchHeight',
+				'jquery-unveil',
+				'slick-carousel',
+				'animsition',
+				'magnific-popup'
 			],
 			includeDev: true
 		}

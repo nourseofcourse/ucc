@@ -2,7 +2,10 @@
   background: $primary;
   text-transform: uppercase;
 
-  margin: 15px 0;
+  margin: 15px auto;
+  max-width: 400px;
+  position: relative;
+  z-index: 1;
 }
 
     .card__body {
@@ -13,6 +16,11 @@
       display: block;
       max-width: 100%;
       height: auto;
+
+      opacity: 0;
+      -webkit-transition: opacity .4s ease-in;
+         -moz-transition: opacity .4s ease-in;
+              transition: opacity .4s ease-in;
     }
     
     .card__title {
